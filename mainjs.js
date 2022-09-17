@@ -14,3 +14,30 @@ function remainder(n, m){
   const remainder = (n, m) => {
     n > m ? n % m : m % n
   }
+
+// 8 kyu Fundamentals: Return  
+
+//Solution
+function add(a,b){
+    return a+b
+}
+
+function divide(a,b){
+    return a/b
+}
+
+function multiply(a,b){
+    return a*b
+}
+
+function mod(a,b){
+    return a%b
+}
+   
+function exponent(a,b){
+    return a**b
+}
+    
+function subt(a,b){
+    return a-b
+}
