@@ -81,3 +81,32 @@ const rps = (p1, p2) => {
  
 //solution
 const  twoDecimalPlaces = n => +n.toFixed(2)
+
+/* Your car is old, it breaks easily. The shock absorbers are gone and you think it can handle about 15 more bumps before it dies totally.
+
+Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead */
+
+//solution 1 (most readable)
+
+function bump(x){
+  let numOfBums = 0
+  x.split('').forEach( element =>{
+    if (element == 'n'){
+      numOfBums += 1
+    }
+  })
+  return numOfBums <= 15 ? 'Woohoo!' : 'Car Dead'
+}
+
+//Solution alternative (codewars flex)
+function bump(x){
+  let newArr = x.split('').filter( element => element === "n")
+  return newArr.length <= 15 ? 'Woohoo!' : 'Car Dead'
+}
+
+//Solution three -> even moar flexi. Don't try this at home
+const bump = (x) => x.split('').filter( element => element === "n").length <= 15 ? 'Woohoo!' : 'Car Dead'
+
+const bumpy = (x) => x.split('n')
+
+console.log(bumpy('__n__n__n'))
