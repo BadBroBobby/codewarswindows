@@ -127,3 +127,20 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
 function sumOfDifferences(arr) {
   return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
+
+/* Wolves have been reintroduced to Great Britain. You are a sheep farmer, and are now plagued by wolves which pretend to be sheep. Fortunately, you are good at spotting them.
+
+Warn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing at the front of the queue which is at the end of the array: */
+
+// Solution
+
+function warnTheSheep(queue) {
+  if(queue[queue.length - 1] === 'wolf'){
+    return `Pls go away and stop eating my sheep`
+  }
+  
+  let wolfIndex = queue.findIndex((element, index) => element == "wolf")
+  let sheepToEat = queue.length - (wolfIndex + 1)
+  
+  return `Oi! Sheep number ${sheepToEat}! You are about to be eaten by a wolf!`
+}
