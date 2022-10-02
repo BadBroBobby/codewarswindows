@@ -110,3 +110,13 @@ const bump = (x) => x.split('').filter( element => element === "n").length <= 15
 const bumpy = (x) => x.split('n')
 
 console.log(bumpy('__n__n__n'))
+
+/* My grandfather always predicted how old people would get, and right before he passed away he revealed his secret!
+
+In honor of my grandfather's memory we will write a function using his formula! */
+
+//solution
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  let arr = [age1, age2, age3, age4, age5, age6, age7, age8]
+  return Math.floor(Math.sqrt(arr.map(a => a * a).reduce((b,c) => b + c)) / 2)
+}
