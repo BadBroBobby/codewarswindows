@@ -174,3 +174,14 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
   }
   return sharkDistance/sharkSpeed <= pontoonDistance/youSpeed ? 'Shark Bait!' : 'Alive!'
 }
+
+//Training JS #10: loop statement --for
+
+//Solution
+function pickIt(arr){
+  var odd=[],even=[];
+  //coding here
+  arr.forEach( num => num % 2 === 0 ? even.push(num) : odd.push(num))
+  
+  return [odd,even];
+}
