@@ -218,3 +218,14 @@ function arithmetic(a, b, operator){
 function grow(x){
   return x.reduce( (a, b) => a * b)
 }
+
+//8 kyu KATA
+
+// add the value "codewars" to the websites array 1,000 times
+
+//Solution
+var websites = []
+
+for (i = 0; i<1000; i++){
+  websites.push('codewars')
+}
