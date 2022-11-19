@@ -229,3 +229,23 @@ var websites = []
 for (i = 0; i<1000; i++){
   websites.push('codewars')
 }
+
+//8 kyu Kata
+
+//Solution
+function calculateTip(amount, rating) {
+  rating = rating.toLowerCase()
+  if( rating === 'terrible'){
+    return amount * 0
+  }else if (rating === 'poor'){
+    return Math.ceil(amount * .05)
+  }else if (rating === 'good'){
+    return Math.ceil(amount * .1)
+  }else if (rating === 'great'){
+    return Math.ceil(amount * .15)
+  }else if (rating === 'excellent'){
+    return Math.ceil(amount * .20)
+  }else{
+    return 'Rating not recognised'
+  }
+  }
