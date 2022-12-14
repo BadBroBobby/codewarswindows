@@ -295,3 +295,15 @@ function popElement(arr){
   
   return arr
 }
+
+//New Task
+
+/* 8 kyu
+Get number from string */
+
+//Solution
+
+function getNumberFromString(s) {
+  return Number(s.split('').filter(a => a <= '9' && a >= '0').join(''))
+  
+}
