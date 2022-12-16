@@ -322,3 +322,17 @@ function remove (string) {
   
   return testArr.join('') + '!';  
 }
+
+//8 kyu
+
+//Find out whether the shape is a cube
+
+//Solution
+
+var cubeChecker = function(volume, side){
+  if(volume < 0 || side < 0){
+    return false
+  }
+  
+  return volume / side / side == side ? true : false;
+};
