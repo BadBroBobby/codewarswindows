@@ -307,3 +307,18 @@ function getNumberFromString(s) {
   return Number(s.split('').filter(a => a <= '9' && a >= '0').join(''))
   
 }
+
+//8 kyu
+
+/* Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string */
+
+//Solution
+
+function remove (string) {
+  //coding and coding....
+  let newArr = string.split('')
+  
+  let testArr = newArr.filter( (e, i) => e != '!' /*|| i == newArr.length - 1*/)
+  
+  return testArr.join('') + '!';  
+}
