@@ -336,3 +336,9 @@ var cubeChecker = function(volume, side){
   
   return volume / side / side == side ? true : false;
 };
+
+//8 kyu
+//Sentence Smash
+
+//Solution
+const smash = words => words.join(' ')
