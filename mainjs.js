@@ -342,3 +342,11 @@ var cubeChecker = function(volume, side){
 
 //Solution
 const smash = words => words.join(' ')
+
+//8 kyu
+//Find the position!
+
+//Solution
+const ALPHABET = ["!","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+const position = letter => `Position of alphabet: ${ALPHABET.indexOf(letter.toUpperCase())}`
