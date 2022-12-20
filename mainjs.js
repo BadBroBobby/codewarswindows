@@ -359,3 +359,28 @@ const position = letter => `Position of alphabet: ${ALPHABET.indexOf(letter.toUp
 function isLockNessMonster(s) {
   return s.includes("tree fiddy") || s.includes("3.50");
 }
+
+//8 kyu
+//Return the day
+
+//Solution
+const daysOfTheWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+]
+
+function whatday(num) { 
+
+  // put your code here
+  if (num < 8){
+  return daysOfTheWeek[num - 1]
+  }else{
+    return 'Wrong, please enter a number between 1 and 7'
+  }
+
+}
