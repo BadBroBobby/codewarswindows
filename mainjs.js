@@ -377,7 +377,7 @@ const daysOfTheWeek = [
 function whatday(num) { 
 
   // put your code here
-  if (num < 8){
+  if (num < 8 && num > 0){
   return daysOfTheWeek[num - 1]
   }else{
     return 'Wrong, please enter a number between 1 and 7'
