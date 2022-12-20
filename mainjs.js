@@ -350,3 +350,12 @@ const smash = words => words.join(' ')
 const ALPHABET = ["!","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 const position = letter => `Position of alphabet: ${ALPHABET.indexOf(letter.toUpperCase())}`
+
+//8 kyu
+//A Strange Trip to the Market
+
+//Solution
+
+function isLockNessMonster(s) {
+  return s.includes("tree fiddy") || s.includes("3.50");
+}
