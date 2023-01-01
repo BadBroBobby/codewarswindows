@@ -384,3 +384,20 @@ function whatday(num) {
   }
 
 }
+
+/* 7 kyu
+Minimize Sum Of Array (Array Series #1) */
+
+// Solution
+function minSum(arrr) {
+  // your code here
+  const arr = arrr.sort((a,b)=>a-b)
+  
+  let total = 0
+  
+  for (let i = 0; i < arr.length / 2; i++){
+    total += arr[i] * arr[ arr.length - 1 - i]
+  }
+  
+  return total
+}
