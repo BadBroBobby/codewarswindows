@@ -407,3 +407,58 @@ Greet Me */
 
 //Solution
 const greet = name => `Hello ${name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()}!`
+
+/* 6 kyu
+The Vowel Code */
+
+//solution
+
+//First function - encode the string
+function encode(string) {
+  return string.split('').map( letter => {
+    switch (letter){
+        case "a":
+        return 1;
+        break;
+        case "e":
+        return 2;
+        break;
+        case "i":
+        return 3;
+        break;
+        case "o":
+        return 4;
+        break;
+        case "u":
+        return 5;
+        break;
+        default:
+        return letter
+    }
+  } ).join('')
+}
+
+//Second function - decode the string
+function decode(string) {
+  return string.split('').map( letter => {
+    switch (Number(letter)){
+        case 1:
+        return "a";
+        break;
+        case 2:
+        return "e";
+        break;
+        case 3:
+        return "i";
+        break;
+        case 4:
+        return "o";
+        break;
+        case 5:
+        return "u";
+        break;
+        default:
+        return letter
+    }
+  } ).join('')
+}
