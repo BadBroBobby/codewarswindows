@@ -401,3 +401,9 @@ function minSum(arrr) {
   
   return total
 }
+
+/* 7 kyu
+Greet Me */
+
+//Solution
+const greet = name => `Hello ${name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()}!`
