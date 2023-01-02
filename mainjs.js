@@ -415,50 +415,66 @@ The Vowel Code */
 
 //First function - encode the string
 function encode(string) {
-  return string.split('').map( letter => {
-    switch (letter){
+  return string.split('').map( function (letter) {
+      switch (letter) {
         case "a":
-        return 1;
-        break;
+          return 1
+          break
         case "e":
-        return 2;
-        break;
+          return 2
+          break
         case "i":
-        return 3;
-        break;
+          return 3
+          break
         case "o":
-        return 4;
-        break;
+          return 4
+          break
         case "u":
-        return 5;
-        break;
+          return 5
+          break
         default:
-        return letter
-    }
-  } ).join('')
+          return letter
+      }
+    } ).join('')
 }
 
 //Second function - decode the string
 function decode(string) {
-  return string.split('').map( letter => {
-    switch (Number(letter)){
+  return string.split('').map( function (letter) {
+      switch (Number(letter)) {
         case 1:
-        return "a";
-        break;
+          return "a"
+          break
         case 2:
-        return "e";
-        break;
+          return "e"
+          break
         case 3:
-        return "i";
-        break;
+          return "i"
+          break
         case 4:
-        return "o";
-        break;
+          return "o"
+          break
         case 5:
-        return "u";
-        break;
+          return "u"
+          break
         default:
-        return letter
+          return letter
+      }
+    } ).join('')
+}
+
+/* 6 kyu
+Mexican Wave */
+
+//solution
+function wave(str){
+  let newArr = [];
+  for (let i = 0; i < str.length; i++) {
+    let copy = str.split('');
+    if(copy[i] !== ' ') {
+    copy[i] = copy[i].toUpperCase()
+    newArr.push(copy.join(''))
     }
-  } ).join('')
+  }
+  return newArr
 }
