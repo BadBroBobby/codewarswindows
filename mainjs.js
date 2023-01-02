@@ -478,3 +478,12 @@ function wave(str){
   }
   return newArr
 }
+
+/* 7 kyu
+Number of Decimal Digits */
+
+//Solution
+function digits(n) {
+  // code goes herew
+  return n.toString().length
+}
