@@ -512,3 +512,10 @@ Take the Derivative */
 
 //solution
 const derive = (coefficient,exponent) => `${coefficient * exponent}x^${exponent-1}`
+
+/* 8 kyu
+Define a card suit */
+
+//Solution
+
+const defineSuit = card => card.includes('♣') ? "clubs" : card.includes('♦') ? "diamonds" : card.includes('♥') ? "hearts" :  "spades" 
