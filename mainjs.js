@@ -506,3 +506,9 @@ function f(n){
     }
     return total
   };
+
+/*   8 kyu
+Take the Derivative */
+
+//solution
+const derive = (coefficient,exponent) => `${coefficient * exponent}x^${exponent-1}`
