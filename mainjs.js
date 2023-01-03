@@ -487,3 +487,22 @@ function digits(n) {
   // code goes herew
   return n.toString().length
 }
+
+/* 7 kyu
+Gauß needs help! (Sums of a lot of numbers). */
+
+//Solution
+function f(n){
+  //insert your code here.... and go crazy!
+     let total = 0
+    
+    if (typeof n != "number" || n < 1 || n.toString().includes('.')){
+      return false
+    }
+  
+    
+    for(let i = 1; i <= n; i++){
+      total += i
+    }
+    return total
+  };
