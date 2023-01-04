@@ -519,3 +519,12 @@ Define a card suit */
 //Solution
 
 const defineSuit = card => card.includes('♣') ? "clubs" : card.includes('♦') ? "diamonds" : card.includes('♥') ? "hearts" :  "spades" 
+
+/* 8 kyu
+Who ate the cookie? */
+
+//solution
+function cookie(x){
+  // ...
+  return `Who ate the last cookie? It was ${typeof x === "string" ? "Zach" : x.toString() == x ? "Monica" : "the dog"}!`
+}
