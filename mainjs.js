@@ -555,3 +555,10 @@ var websites = []; */
 let websites = []
 
 websites.push('codewars')
+
+//8 kyu
+
+//solution
+function sayHello( name, city, state ) {
+  return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+  }
