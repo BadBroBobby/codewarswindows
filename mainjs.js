@@ -528,3 +528,30 @@ function cookie(x){
   // ...
   return `Who ate the last cookie? It was ${typeof x === "string" ? "Zach" : x.toString() == x ? "Monica" : "the dog"}!`
 }
+
+/* 7 kyu
+Sum of Triangular Numbers */
+
+//solution
+function sumTriangularNumbers(n) {
+  let sum=0,total=0;
+  
+  for (let i=0;i<=n;i++){
+    sum+=i*1
+    total+=sum
+  }
+  
+  return total
+}
+
+/* Add the value "codewars" to the websites array.
+After your code executes the websites array should == ["codewars"]
+
+The websites array has already been defined for you using the following code:
+
+var websites = []; */
+
+// add the value "codewars" to the already defined websites array
+let websites = []
+
+websites.push('codewars')
