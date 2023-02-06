@@ -573,3 +573,12 @@ let rational = s.split("").filter( letter => !colors.includes(letter))
 
 return `${rational.length}/${s.length}`
 }
+
+//8 kyu
+
+//Solution
+
+function whoIsPaying(name){
+  //your code here
+  return name.length <= 2 ? [name] : [name, name[0] + name[1]]
+}
