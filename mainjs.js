@@ -562,3 +562,14 @@ websites.push('codewars')
 function sayHello( name, city, state ) {
   return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
   }
+
+//7 kyu
+
+//solution
+function printerError(s) {
+  // your code
+const colors = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m" ]
+let rational = s.split("").filter( letter => !colors.includes(letter))
+
+return `${rational.length}/${s.length}`
+}
