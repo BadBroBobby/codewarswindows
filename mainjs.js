@@ -582,3 +582,9 @@ function whoIsPaying(name){
   //your code here
   return name.length <= 2 ? [name] : [name, name[0] + name[1]]
 }
+
+//7 kyu
+//Convert an array of strings to array of numbers
+
+//Solution
+const toNumberArray = stringarray => stringarray.map( string => +string)
