@@ -603,3 +603,16 @@ class Person {
     return `${this.name}s age is ${this.age}`
   }
 }
+
+//8 kyu
+//Thinkful - Number Drills: Blue and red marbles
+
+//Solution
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  // Your code here.
+  let currentBlue = blueStart-bluePulled;
+  let currentRed = redStart-redPulled;
+  let totalMarbs = currentBlue + currentRed
+  
+  return  currentBlue / totalMarbs
+}
