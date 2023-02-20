@@ -588,3 +588,18 @@ function whoIsPaying(name){
 
 //Solution
 const toNumberArray = stringarray => stringarray.map( string => +string)
+
+//8 kyu
+//Classy Classes
+
+//Solution
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  get info() {
+    return `${this.name}s age is ${this.age}`
+  }
+}
