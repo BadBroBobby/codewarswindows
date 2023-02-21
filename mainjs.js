@@ -616,3 +616,12 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
   
   return  currentBlue / totalMarbs
 }
+
+//7 kyu
+//Power of two
+
+//Solution
+function isPowerOfTwo(n){
+  return Number.isInteger(Math.log2(n));
+  
+}
