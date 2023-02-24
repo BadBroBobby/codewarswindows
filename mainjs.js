@@ -625,3 +625,18 @@ function isPowerOfTwo(n){
   return Number.isInteger(Math.log2(n));
   
 }
+
+//7 kyu
+//esreveR
+
+//Solution
+reverse = function(array) {
+  // TODO: program me!
+  let newArr = []
+  
+  for(let i = array.length - 1; i>=0; i--){
+    newArr.push(array[i])
+  }
+  
+  return newArr
+}
