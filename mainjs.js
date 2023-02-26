@@ -640,3 +640,22 @@ reverse = function(array) {
   
   return newArr
 }
+
+//7 kyu
+//Switcheroo
+
+//Solution
+function switcheroo(x){
+  let newStr = ''
+  
+  for(let i = 0; i < x.length; i++){
+    if(x[i] === 'a'){
+      newStr += 'b'
+    }else if(x[i] === 'b'){
+      newStr += 'a'
+    }else{
+      newStr += 'c'
+    }
+  }
+  return newStr
+}
