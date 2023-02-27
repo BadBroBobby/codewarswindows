@@ -706,3 +706,13 @@ function stringClean(s){
     }
   }).join("")
 }
+
+//7 kyu
+//Even numbers in an array
+
+//Solution
+const evenNumbers = function (array, number) {
+  // good luck
+  let newArr = array.filter( number => number % 2 === 0).slice(-number)
+  return newArr
+}
