@@ -690,3 +690,19 @@ const xor = function (a,b) {
     return false
   }
 }
+
+//8 kyu
+//String cleaning
+
+//solution
+function stringClean(s){
+  const numbers = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  // Function will return the cleaned string
+  return s.split('').filter( letter => {
+    if(numbers.includes(letter)){
+      return ""
+    }else{
+      return letter
+    }
+  }).join("")
+}
