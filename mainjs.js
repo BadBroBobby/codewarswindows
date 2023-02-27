@@ -678,3 +678,15 @@ function likes(names) {
     return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
   }
 }
+
+//8 kyu
+//Exclusive "or" (xor) Logical Operator
+
+//Solution
+const xor = function (a,b) {
+  if((a === true && b === false) || (b === true && a === false) ){
+    return true
+  }else{
+    return false
+  }
+}
