@@ -716,3 +716,12 @@ const evenNumbers = function (array, number) {
   let newArr = array.filter( number => number % 2 === 0).slice(-number)
   return newArr
 }
+
+//8 kyu
+//Do you speak "English"?
+
+//Solution
+const spEng = function (sentence){
+  //write your code here
+    return sentence.toLowerCase().includes('english') ? true : false
+  }
