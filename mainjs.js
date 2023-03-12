@@ -725,3 +725,29 @@ const spEng = function (sentence){
   //write your code here
     return sentence.toLowerCase().includes('english') ? true : false
   }
+
+//8 kyu
+//Cat years, Dog years
+
+//Solution
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // Your code here!
+  let humanYear = humanYears
+  
+  let catYears = 15
+  
+  let dogYears = 15
+  
+  if(humanYear === 2){
+    catYears += 9
+    dogYears += 9
+  }else if(humanYear === 1){
+    return [humanYear, catYears, dogYears]
+  }else{
+    catYears += 9
+    catYears += (humanYear - 2) * 4
+    dogYears += 9
+    dogYears += (humanYear - 2) * 5
+  }
+  
+  return  [humanYear, catYears, dogYears];
