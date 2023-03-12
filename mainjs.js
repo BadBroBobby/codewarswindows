@@ -751,3 +751,19 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   }
   
   return  [humanYear, catYears, dogYears];
+}
+
+//7 kyu
+//Sum of Minimums!
+
+//Solution
+function sumOfMinimums(arr) {
+  // your code here
+  let sum = 0
+  
+  for(let i = 0; i < arr.length; i++){
+    sum += Math.min(...arr[i])
+  }
+  
+  return sum
+}
