@@ -347,9 +347,9 @@ const smash = words => words.join(' ')
 //Find the position!
 
 //Solution
-const ALPHABET = ["!","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+/* const ALPHABET = ["!","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-const position = letter => `Position of alphabet: ${ALPHABET.indexOf(letter.toUpperCase())}`
+const position = letter => `Position of alphabet: ${ALPHABET.indexOf(letter.toUpperCase())}` */
 
 //8 kyu
 //A Strange Trip to the Market
@@ -766,4 +766,38 @@ function sumOfMinimums(arr) {
   }
   
   return sum
+}
+
+//8 kyu
+//Grasshopper - Bug Squashing
+
+//Solution
+var health = 100
+var position = 0
+var coins = 0
+
+function main () {
+  rollDice()
+  move()
+  combat()
+  getCoins()
+  buyHealth()
+  printStatus()
+}
+
+//8 kyu
+//Convert to Binary
+
+//Solution
+function toBinary(n){
+  return Number((n >>> 0).toString(2));
+}
+
+//8 kyu
+//get ascii value of character
+
+//Solution
+function getASCII(c){
+  // ...
+  return c.charCodeAt()
 }
