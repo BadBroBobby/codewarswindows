@@ -817,3 +817,11 @@ function leo(oscar){
     return "Leo got one already!"
   }
 }
+
+//7 kyu
+//Find the middle element
+
+//solution
+function gimme(a) {
+  return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
+}
