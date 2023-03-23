@@ -825,3 +825,19 @@ function leo(oscar){
 function gimme(a) {
   return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
 }
+
+//8 kyu
+//Multiplication table for number
+
+//Solution
+function multiTable(number) {
+  // good luck
+  let tableString = ''
+  for(let i = 1; i <= 10; i++){
+    tableString += `${i} * ${number} = ${i * number}`
+    if(i != 10){
+      tableString += '\n'
+    }
+  }
+  return tableString
+}
