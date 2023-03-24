@@ -841,3 +841,17 @@ function multiTable(number) {
   }
   return tableString
 }
+
+//8 kyu
+//OOP: Object Oriented Piracy
+
+//Solution
+class Ship {
+  constructor(draft,crew){
+  this.draft = draft;
+  this.crew = crew;
+   }
+   isWorthIt() {
+     return this.draft - (this.crew * 1.5) > 20 ? true : false
+   }
+ }
