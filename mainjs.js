@@ -855,3 +855,14 @@ class Ship {
      return this.draft - (this.crew * 1.5) > 20 ? true : false
    }
  }
+
+ //8 kyu
+//Freudian translator
+
+//Solution
+function toFreud(string) {
+  if(string == ""){
+    return ""
+  }
+return string.split(' ').map(word => word = 'sex').join(' ');
+}
