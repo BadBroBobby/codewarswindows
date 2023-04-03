@@ -866,3 +866,31 @@ function toFreud(string) {
   }
 return string.split(' ').map(word => word = 'sex').join(' ');
 }
+
+function kebabize(str) {
+  const uppercaseAlphabet = ['A', 'B', 'C', 'D', 'E', 'F',
+                             'G', 'H', 'I', 'J', 'K', 'L',
+                             'M', 'N', 'O', 'P', 'Q', 'R',
+                             'S', 'T', 'U', 'V', 'W', 'X',
+                             'Y', 'Z']
+  let strWithSpace = ""
+  let trash = []
+  
+  str.split('').forEach( (letter, index) => {
+    if(letter / 1 || letter == 0){
+      trash.push(letter)
+    }else if(uppercaseAlphabet.includes(letter)){
+      strWithSpace += " "
+      strWithSpace += letter
+    }else{
+      strWithSpace += letter
+    }
+  })
+  
+  
+ /* if(strWithSpace.split(" ").join('-').toLowerCase()[0] === "-"){
+    strWithSpace.slice(2)
+  }*/
+  
+  return strWithSpace.trim().split(" ").join('-').toLowerCase()
+}
