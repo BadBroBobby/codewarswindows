@@ -894,3 +894,25 @@ function kebabize(str) {
   
   return strWithSpace.trim().split(" ").join('-').toLowerCase()
 }
+
+//6 kyu
+//Data Reverse
+
+//Solution
+function dataReverse(data) {
+  // Your code here
+  //container array for data
+  let dataArray = []
+  
+  //store each 8 bit long segment in dataArray
+  for(let i = 0; i < data.length / 8; i++){
+    let arrSlice = data.slice(0 + ( i*8 ), 8 + ( i*8 ))
+    dataArray.push(arrSlice)
+  }
+  //reverse and flat nested array and return.
+  return dataArray.reverse().flat()
+  
+  //reverse array
+  
+  //join array into string and return
+}
