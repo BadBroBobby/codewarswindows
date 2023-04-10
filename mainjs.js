@@ -916,3 +916,10 @@ function dataReverse(data) {
   
   //join array into string and return
 }
+// 8 kyu
+// Find the Integral
+
+//Solution
+function integrate(coefficient, exponent) {
+  return `${coefficient / (exponent + 1)}x^${exponent + 1}`
+}
