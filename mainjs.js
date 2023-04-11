@@ -923,3 +923,13 @@ function dataReverse(data) {
 function integrate(coefficient, exponent) {
   return `${coefficient / (exponent + 1)}x^${exponent + 1}`
 }
+
+//7 kyu
+//Sum of Cubes
+function sumCubes(n){
+  let sum = 0
+  for(let i = 1; i <= n; i++){
+    sum += Math.pow(i, 3)
+  }
+  return sum
+}
