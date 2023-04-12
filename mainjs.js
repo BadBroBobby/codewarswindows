@@ -945,3 +945,11 @@ function partList(arr){
   }
   return newArr
 }
+
+//8 kyu
+// Parse Float
+
+//Solution
+function parseF(s) {
+  return isNaN(parseFloat(s)) ? null : parseFloat(s);
+}
