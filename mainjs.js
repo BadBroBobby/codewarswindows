@@ -933,3 +933,15 @@ function sumCubes(n){
   }
   return sum
 }
+
+//7 kyu
+//Parts of a list
+
+//Solution
+function partList(arr){
+  let newArr = []
+  for(let i = 1; i < arr.length; i++){
+    newArr.push([arr.slice(0, i).join(' '), arr.slice(i).join(' ')])
+  }
+  return newArr
+}
