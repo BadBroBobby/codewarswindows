@@ -953,3 +953,26 @@ function partList(arr){
 function parseF(s) {
   return isNaN(parseFloat(s)) ? null : parseFloat(s);
 }
+
+//7 kyu
+//Ordered Count of Characters
+
+//Solution
+function orderedCount (s) {
+  const counts = {};
+  for (const c of s) {
+    if (counts[c]) {
+      counts[c]++;
+    } else {
+      counts[c] = 1;
+    }
+  }
+  const tuples = [];
+  for (const c of s) {
+    if (counts[c]) {
+      tuples.push([c, counts[c]]);
+      counts[c] = 0;
+    }
+  }
+  return tuples;
+}
