@@ -976,3 +976,29 @@ function orderedCount (s) {
   }
   return tuples;
 }
+
+//8 kyu
+//Polish alphabet
+
+//Solution
+const polishLetters = {
+  ą: "a",
+  ć: "c",
+  ę: "e",
+  ł: "l",
+  ń: "n",
+  ó: "o",
+  ś: "s",
+  ź: "z",
+  ż: "z",
+}
+
+const correctPolishLetters = string =>{
+  return string.split('').map(letter => {
+    if (letter in polishLetters) {
+      return polishLetters[letter];
+    } else {
+      return letter;
+    }
+  }).join('');
+}
