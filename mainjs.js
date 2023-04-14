@@ -1002,3 +1002,21 @@ const correctPolishLetters = string =>{
     }
   }).join('');
 }
+
+//7kyu
+//Product Of Maximums Of Array (Array Series #2)
+
+//Solution
+function maxProduct(numbers, size){
+  //your code here
+  const maxArr = []
+  
+  numbers.sort( (a,b) => a-b ).reverse()
+  
+  
+  for(let i = 0; i< size; i++ ){
+    maxArr.push(numbers[i])
+  }
+  
+  return maxArr.reduce( (a,b) => a * b)
+}
