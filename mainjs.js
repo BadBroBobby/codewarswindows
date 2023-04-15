@@ -1036,3 +1036,11 @@ function outed(meet, boss){
   numOfPeople++
   return sum / numOfPeople <= 5 ? "Get Out Now!" : "Nice Work Champ!"
 }
+
+//8 kyu
+//Alan Partridge II - Apple Turnover
+
+//Solution
+function apple(x){
+  return Math.pow(x, 2) > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox."
+}
