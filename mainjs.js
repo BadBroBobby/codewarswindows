@@ -1020,3 +1020,19 @@ function maxProduct(numbers, size){
   
   return maxArr.reduce( (a,b) => a * b)
 }
+
+//7 kyu
+//The Office I - Outed
+
+//Solution
+function outed(meet, boss){
+  let sum = 0
+  let numOfPeople = 0
+  for(let person in meet){
+    sum += meet[person]
+    numOfPeople++
+  }
+  sum += meet[boss]
+  numOfPeople++
+  return sum / numOfPeople <= 5 ? "Get Out Now!" : "Nice Work Champ!"
+}
