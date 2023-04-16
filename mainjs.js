@@ -1044,3 +1044,42 @@ function outed(meet, boss){
 function apple(x){
   return Math.pow(x, 2) > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox."
 }
+
+//8 kyu
+//Bin to Decimal
+
+//Solution
+const binToDec = (bin) => parseInt(bin, 2)
+
+//8 kyu
+//Pythagorean Triple
+
+//Solution
+function isPythagoreanTriple(integers) {
+  // Good luck friends!
+  let aSqr = Math.pow(integers[0], 2)
+  let bSqr = Math.pow(integers[1], 2)
+  let cSqr = Math.pow(integers[2], 2)
+  
+  if( aSqr + bSqr == cSqr || bSqr + cSqr == aSqr || cSqr + aSqr == bSqr ){
+    return true
+  }else{
+    return false
+  }
+}
+
+//7 kyu
+//Simple consecutive pairs
+
+//Solution
+function pairs(ar){
+  //..
+   let count = 0
+   
+   for (let i = 0; i < ar.length; i += 2) {
+     if (ar[i] - ar[i + 1] == 1 || ar[i] - ar[i + 1] == -1) {
+       count += 1;
+     }
+   }
+   return count
+ };
