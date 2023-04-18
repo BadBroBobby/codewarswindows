@@ -1083,3 +1083,12 @@ function pairs(ar){
    }
    return count
  };
+
+//7 kyu
+//Functional Addition
+//Solution
+ function add(n) {
+  return function(x) {
+    return x + n;
+  }
+}
