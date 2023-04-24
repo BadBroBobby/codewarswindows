@@ -1092,3 +1092,21 @@ function pairs(ar){
     return x + n;
   }
 }
+
+//7 kyu
+//Squares sequence
+
+//Solution  
+function squares(x, n) {
+  let numArr = [x]
+  
+  //check for n <= 0
+  if(n < 1){
+    return []
+  }
+  
+  for(let i = 1; i < n; i++){
+    numArr.push(Math.pow(numArr[i - 1], 2) )
+  }
+  return numArr
+}
