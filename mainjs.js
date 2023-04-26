@@ -1110,3 +1110,12 @@ function squares(x, n) {
   }
   return numArr
 }
+
+//7 kyu
+// Indexed capitalization
+//Solution
+function capitalize(s,arr){
+  let strArr = s.split('')
+  
+  return strArr.map( (letter, index) => arr.includes(index) ? letter.toUpperCase() : letter).join('');
+};
