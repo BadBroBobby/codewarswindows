@@ -1119,3 +1119,20 @@ function capitalize(s,arr){
   
   return strArr.map( (letter, index) => arr.includes(index) ? letter.toUpperCase() : letter).join('');
 };
+
+//8 kyu
+//Color Ghost
+
+//solution
+var Ghost = function() {
+  // your code goes here
+  let colors = ['white', 'yellow', 'purple', 'red']
+  this.color = colors[Math.floor(Math.random() * colors.length)]
+}
+
+//8 kyu
+//Training JS #18: Methods of String object--concat() split() and its good friend join()
+//solution
+function splitAndMerge(string, separator) {
+  return string.split(' ').map(word => word.split('').join(separator)).join(' ')
+}
