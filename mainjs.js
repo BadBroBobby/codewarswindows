@@ -1136,3 +1136,9 @@ var Ghost = function() {
 function splitAndMerge(string, separator) {
   return string.split(' ').map(word => word.split('').join(separator)).join(' ')
 }
+//8 kyu
+//Price of Mangoes
+//solution
+function mango(quantity, price){  
+  return (quantity - Math.floor(quantity / 3)) * price
+}
