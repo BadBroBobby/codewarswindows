@@ -1157,3 +1157,17 @@ function logicalCalc(booleans, operator) {
     return false; // Invalid operator
   }
 }
+
+//8 kyu
+//Crash Override
+//solution
+function aliasGen(fName, lName){
+  let first = firstName[fName[0].toUpperCase()]
+  let last = surname[lName[0].toUpperCase()]
+  
+  if(first && last){
+    return `${first} ${last}`
+  }else{
+    return "Your name must start with a letter from A - Z."
+  }
+}
