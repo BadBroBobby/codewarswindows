@@ -1142,3 +1142,18 @@ function splitAndMerge(string, separator) {
 function mango(quantity, price){  
   return (quantity - Math.floor(quantity / 3)) * price
 }
+
+//8 kyu
+//Logical calculator
+//solution
+function logicalCalc(booleans, operator) {
+  if (operator === "AND") {
+    return booleans.reduce((acc, curr) => acc && curr);
+  } else if (operator === "OR") {
+    return booleans.reduce((acc, curr) => acc || curr);
+  } else if (operator === "XOR") {
+    return booleans.reduce((acc, curr) => acc !== curr);
+  } else {
+    return false; // Invalid operator
+  }
+}
