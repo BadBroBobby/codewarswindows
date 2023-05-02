@@ -1171,3 +1171,28 @@ function aliasGen(fName, lName){
     return "Your name must start with a letter from A - Z."
   }
 }
+
+//8 kyu
+//Grader
+
+//solution
+const grade = {
+  F: "F",
+  A: "A",
+  B: "B",
+  C: "C",
+  D: "D",
+}
+function grader(score) {
+  if(score > 1 || score < .6){
+    return grade.F
+  }else if(score >= 0.9){
+    return grade.A
+  }else if(score >= 0.8){
+    return grade.B
+  }else if(score >= 0.7){
+    return grade.C
+  }else if(score >= 0.6){
+    return grade.D
+  }
+}
