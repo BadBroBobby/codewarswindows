@@ -1210,3 +1210,13 @@ function min(arr, toReturn) {
     return arr.indexOf(smalVal)
   }
 }
+
+//8 kyu
+//Classic Hello World
+
+//Solution
+class Solution{
+  static main() {
+    console.log("Hello World!")
+  }
+}
