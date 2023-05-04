@@ -1196,3 +1196,17 @@ function grader(score) {
     return grade.D
   }
 }
+
+//7 kyu
+//Smallest value of an array
+
+//Solution
+function min(arr, toReturn) {
+  // TODO
+  if(toReturn == 'value'){
+    return Math.min(...arr)
+  }else{
+    let smalVal = Math.min(...arr)
+    return arr.indexOf(smalVal)
+  }
+}
