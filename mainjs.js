@@ -1220,3 +1220,31 @@ class Solution{
     console.log("Hello World!")
   }
 }
+
+//8 kyu
+//Training JS #9: loop statement --while and do..while
+//Solution
+function padIt(str,n){
+  let i = 0
+  while(i < n){
+    if(i % 2 == 0){
+      str = '*' + str
+    }else{
+      str = str + '*'
+    }
+    i++
+  }
+  return str
+}
+
+//8 kyu
+//Calculate Price Excluding VAT
+
+//Solution
+function excludingVatPrice(price){
+  if(price === null){
+    return -1
+  }else{
+    return Number((price / 1.15).toFixed(2))
+  }
+}
