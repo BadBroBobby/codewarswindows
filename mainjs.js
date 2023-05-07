@@ -1248,3 +1248,20 @@ function excludingVatPrice(price){
     return Number((price / 1.15).toFixed(2))
   }
 }
+
+//7 kyu
+//The old switcheroo
+
+//Solution 1
+function vowel2index(str) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  let strArr = str.split('')
+  
+  return strArr.map( (letter, index) => vowels.includes(letter.toLowerCase()) ? index + 1 : letter).join('')
+}
+//Solution 2
+const vowels =  ["a","e","i","o","u"]
+function vowel2index(str) {
+   //code me
+  return str.split('').map( (letter, index) => vowels.includes(letter.toLowerCase()) ? index + 1 : letter ).join('')
+}
