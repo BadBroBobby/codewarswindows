@@ -1265,3 +1265,32 @@ function vowel2index(str) {
    //code me
   return str.split('').map( (letter, index) => vowels.includes(letter.toLowerCase()) ? index + 1 : letter ).join('')
 }
+
+//8 kyu
+//pick a set of first elements
+
+//Solution
+function first(arr, n) {
+  // return arr.slice(0, n)
+  if(n === undefined){
+    return arr.slice(0, 1)
+  }else if(n === 0){
+    return []
+  }else{
+    return arr.slice(0, n)
+  }
+}
+
+//8 kyu
+//Reversed sequence
+
+//Solution
+const reverseSeq = n => {
+  let reversedNumArr = [];
+  
+  for(let i = n; i > 0; i--){
+    reversedNumArr.push(i)
+  }
+  
+  return reversedNumArr
+};
