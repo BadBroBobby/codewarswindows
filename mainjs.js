@@ -1304,3 +1304,15 @@ class Cat extends Animal {
     return `${this.name} meows.`
   }
 }
+
+//7 kyu
+//The Office IV - Find a Meeting Room
+
+//Solution
+function meeting(x){
+  if(x.every( currentVal => currentVal == "X" )){
+    return 'None available!'
+  }else{
+    return x.findIndex( currentVal => currentVal === 'O')
+  }
+}
