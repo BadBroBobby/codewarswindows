@@ -1294,3 +1294,13 @@ const reverseSeq = n => {
   
   return reversedNumArr
 };
+
+//8 kyu
+//Classy Extentions
+
+//Solution
+class Cat extends Animal {
+  speak(){
+    return `${this.name} meows.`
+  }
+}
