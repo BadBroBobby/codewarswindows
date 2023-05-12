@@ -1316,3 +1316,26 @@ function meeting(x){
     return x.findIndex( currentVal => currentVal === 'O')
   }
 }
+
+//7 kyu
+//Discover The Original Price
+
+//Solution
+function discoverOriginalPrice(discountedPrice, salePercentage){  
+  return Number((discountedPrice / (1 - (salePercentage / 100))).toFixed(2))
+}
+
+//8 kyu
+//Contamination #1 -String-
+
+//Solution
+function contamination(text, char){
+  // Code here ;)
+  let infectedStr = ""
+  
+  for(let i = 0; i < text.length; i++){
+    infectedStr += char
+  }
+  
+  return infectedStr
+}
