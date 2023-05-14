@@ -1339,3 +1339,12 @@ function contamination(text, char){
   
   return infectedStr
 }
+
+//8 kyu
+//Simple Comparison?
+//
+//Solution  1
+function add(a, b){
+	// code here
+  return a == b ? true : false
+}
