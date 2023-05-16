@@ -1348,3 +1348,24 @@ function add(a, b){
 	// code here
   return a == b ? true : false
 }
+
+//6 kyu
+//Give me a Diamond
+
+//Solution
+function diamond(n){
+  if(n < 0 || n % 2 == 0){
+    return null
+  }else{
+    let diam = ''
+    let space = ' '
+    let star = '*'
+    let mid = Math.floor(n / 2)
+    
+    for(let i = 0; i < n; i++){
+      let len = Math.abs(mid - i)
+      diam += space.repeat(len) + star.repeat(n - len * 2) + '\n'
+    }
+    return diam
+  }
+}
