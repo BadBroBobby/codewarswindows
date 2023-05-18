@@ -1369,3 +1369,22 @@ function diamond(n){
     return diam
   }
 }
+
+//4 kyu
+//Multiplying numbers as strings
+
+//Solution
+function multiply(a, b) {
+  let product = BigInt(a) * BigInt(b)
+  
+  return product.toString()
+}
+
+//8 kyu
+//ES6 string addition
+
+//Solution
+function joinStrings(string1, string2){
+  // code here
+ return `${string1.toString()} ${string2.toString()}`
+}
