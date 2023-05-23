@@ -1388,3 +1388,21 @@ function joinStrings(string1, string2){
   // code here
  return `${string1.toString()} ${string2.toString()}`
 }
+
+//7 kyu
+//Unlucky Days
+
+//Solution
+function unluckyDays(year){
+  //your code here
+  let unluckyDays = 0
+  
+  for(let i = 0; i < 12; i++){
+    let date = new Date(year, i, 13)
+    if(date.getDay() === 5){
+      unluckyDays++
+    }
+  }
+  
+  return unluckyDays
+}
