@@ -1406,3 +1406,19 @@ function unluckyDays(year){
   
   return unluckyDays
 }
+
+//8 kyu
+//Remove duplicates from list
+
+//Solution
+function distinct(a) {
+  let uniqueList = []
+  
+  for(let i = 0; i < a.length; i++){
+    if(!uniqueList.includes(a[i])){
+      uniqueList.push(a[i])
+    }
+  }
+  
+  return uniqueList.flat()
+}
